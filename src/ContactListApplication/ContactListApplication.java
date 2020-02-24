@@ -11,7 +11,7 @@ public class ContactListApplication {
      * This method will add firstName ,lastName, contactName, emailAddress
      *
      * @param firstName     will add firstName of the Person in the contactList
-     * @param secondName      will add lastName of the Person in the contactList
+     * @param secondName    will add lastName of the Person in the contactList
      * @param contactNumber will add  contactNumber of the Person in the contactList
      * @param emailAddress  will add emailAddress of the Person in the contactList
      */
@@ -19,18 +19,35 @@ public class ContactListApplication {
         contactList.add(new Person(firstName, secondName, contactNumber, emailAddress));
     }
 
+    /**
+     * This method adds first name of the person
+     *
+     * @param firstName the first name of the person
+     */
     public void addFirstName(String firstName) {
         contactList.add(new Person(firstName));
     }
 
+    /**
+     * This method adds second name
+     * @param secondName the second name of the person
+     */
     public void addSecondName(String secondName) {
         contactList.add(new Person(secondName));
     }
 
+    /**
+     * This method adds contactNumber
+     * @param contactNumber the contactNumber of the person
+     */
     public void addContactNumber(String contactNumber) {
         contactList.add(new Person(contactNumber));
     }
 
+    /**
+     * This method adds emailAddress
+     * @param emailAAddress the emailAddress of the person
+     */
     public void addEmailAddress(String emailAAddress) {
         contactList.add(new Person(emailAAddress));
     }
@@ -43,6 +60,7 @@ public class ContactListApplication {
      * @return the contactList created
      */
     public ArrayList<Person> getContactList() {
+
         return contactList;
     }
 
@@ -51,7 +69,7 @@ public class ContactListApplication {
      */
     public void print() {
         for (int i = 0; i < contactList.size(); i++) {
-            System.out.println((i + 1) + "." + contactList.get(i));
+            System.out.println((i + 1) + "." + contactList.get((i)));
         }
     }
 

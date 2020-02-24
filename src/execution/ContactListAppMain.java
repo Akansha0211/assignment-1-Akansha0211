@@ -64,6 +64,9 @@ public class ContactListAppMain {
         if (input.toLowerCase() == "y") {
             ca.addContactNumber(scanner.nextLine());
         }
+//        else if (input.toLowerCase()=="n"){
+//            break;
+//        }
 
         System.out.println("Would you like to ad email address?(y/n)");
         String input2 = scanner.nextLine();
