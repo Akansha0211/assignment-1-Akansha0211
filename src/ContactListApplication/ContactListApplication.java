@@ -47,11 +47,11 @@ public class ContactListApplication {
     }
 
     /**
-     * This method will print the cntactList
+     * This method will print the contactList
      */
     public void print() {
         for (int i = 0; i < contactList.size(); i++) {
-            System.out.println(contactList.get(i));
+            System.out.println((i + 1) + "." + contactList.get(i));
         }
     }
 
